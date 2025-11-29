@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="usernameBlock" class="hidden">
+    <label>Username: </label>
+    <input type="text" placeholder="Enter username">
+  </div>
+
+  <div id="passwordBlock" class="hidden" style="margin-top: 10px;">
+    <label>Password: </label>
+    <input type="password" placeholder="Enter password">
+  </div>
+
+  <div id="buttonBlock" class="hidden" style="margin-top: 15px;">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </div>
+
+
+  
+
+  <script>
+    // Show username immediately
+    document.getElementById("usernameBlock").classList.remove("hidden");
+
+    // Show password after 1 second
+    setTimeout(() => {
+      document.getElementById("passwordBlock").classList.remove("hidden");
+    }, 1000);
+
+    // Show buttons after 2 seconds
+    setTimeout(() => {
+      document.getElementById("buttonBlock").classList.remove("hidden");
+    }, 2000);
+  </script>
+
+</body>
+</html>

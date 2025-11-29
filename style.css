@@ -47,11 +47,15 @@ header{
     width: 250px;
     height: 250px;
     margin: 30px; 
-    margin-bottom: 70px;
-  
+    margin-bottom: 70px; 
+}
+.info-box div:hover {
     
-    
-   
+ width: 265px;
+    height: 265px;
+    margin: 30px; 
+    margin-bottom: 70px; 
+    box-sizing: border-box;
 }
 .box-img{
     width: 100%;
